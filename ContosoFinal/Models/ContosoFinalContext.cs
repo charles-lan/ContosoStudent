@@ -7,6 +7,7 @@ using System.Web;
 
 namespace ContosoFinal.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class ContosoFinalContext : DbContext
     {
         public class MyConfiguration : DbMigrationsConfiguration<ContosoFinalContext>
