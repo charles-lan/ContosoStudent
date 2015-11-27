@@ -60,17 +60,17 @@ namespace ContosoWebAPI.Models
                  },
             };
 
-                foreach (Enrollment e in enrollments)
-                {
-                    var enrollmentInDataBase = context.Enrollments.Where(
-                        s =>
-                             s.Student.ID == e.StudentID &&
-                             s.Course.CourseID == e.CourseID).SingleOrDefault();
-                    if (enrollmentInDataBase == null)
-                    {
-                        context.Enrollments.Add(e);
-                    }
-                }
+                //foreach (Enrollment e in enrollments)
+                //{
+                //    var enrollmentInDataBase = context.Enrollments.Where(
+                //        s =>
+                //             s.Student.ID == e.StudentID &&
+                //             s.Course.CourseID == e.CourseID).SingleOrDefault();
+                //    if (enrollmentInDataBase == null)
+                //    {
+                //        context.Enrollments.Add(e);
+                //    }
+                //}
                 context.SaveChanges();
 
                 var items = new List<Item>
@@ -154,7 +154,7 @@ namespace ContosoWebAPI.Models
                     },
                 };
 
-                items.ForEach(s => context.Items.AddOrUpdate(p => p.Title, s));
+                items.ForEach(s => context.Items.Add(s));
                 context.SaveChanges();
 
 

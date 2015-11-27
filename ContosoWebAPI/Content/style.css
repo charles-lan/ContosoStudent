@@ -1,0 +1,13 @@
+﻿body{
+    padding-left:100px;
+    padding-right:100px
+}
+
+.spaced-table>tbody>tr>td{
+    padding: 20px;
+}
+
+.spaced-table>thead>tr>th{
+    padding: 20px;
+}body {
+}

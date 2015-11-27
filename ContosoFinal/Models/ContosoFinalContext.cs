@@ -173,7 +173,7 @@ namespace ContosoFinal.Models
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ContosoFinalContext, MyConfiguration>());
         }
-
+            
         public System.Data.Entity.DbSet<ContosoFinal.Models.Course> Courses { get; set; }
 
         public System.Data.Entity.DbSet<ContosoFinal.Models.Enrollment> Enrollments { get; set; }

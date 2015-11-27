@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Create student</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/style.css" />
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/Enrollpages.js"></script>
+    <script src="scripts/StudentModule.js"></script>
+    <script src="scripts/CourseModule.js"></script>
+    <script src="scripts/EnrollmentModule.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">MSA demo</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Dashboard</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <a href="index.html">Back to home</a>
+        <h2>Add a course</h2>
+        <form role="form" name="create">
+            <div class="form-group">
+                <label for="courseIDinput">Course ID:</label>
+                <input type="text" class="form-control" id="courseIDinput" required />
+            </div>
+            <div class="form-group">
+                <label for="Title">Title:</label>
+                <input type="text" class="form-control" id="Title" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Credits">Credit:</label>
+                <input type="text" class="form-control" id="Credit" />
+            </div>
+            <div class="btn-toolbar">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="button" class="btn btn-default" id="btncancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
